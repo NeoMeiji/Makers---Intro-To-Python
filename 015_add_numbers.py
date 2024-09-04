@@ -12,7 +12,11 @@ from lib.helpers import check_that_these_are_equal
 
 # YOUR FUNCTION GOES BELOW THIS LINE
 
+def add_numbers(num_a, num_b):
+    return num_a + num_b
 
+print("The following numbers when added together =")
+print(add_numbers (33, 44))
 
 # YOUR FUNCTION GOES ABOVE THIS LINE
 

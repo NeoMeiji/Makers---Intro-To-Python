@@ -1,20 +1,19 @@
 # Video alternative: https://vimeo.com/954334376/0c486313d0#t=0
 
-# Now, let's look at expressions. You've actually already
-# seen them a lot!
+# Now, let's look at expressions. 
+# You've actually already seen them a lot!
 
 added = 2 + 3
 
-# Is this an expression? Not quite. It does contain an
-# expression though.
+# Is this an expression? Not quite. 
+# It does contain an expression though.
 
 # The expression part is this:
 
 2 + 3
 
-# The expression is the fundamental unit of computation in
-# your program. It is the combination of data and operators
-# (and some other things) to produce a result.
+# The expression is the fundamental unit of computation in your program. 
+# It is the combination of data and operators (and some other things) to produce a result.
 
 # Here are some more examples of expressions:
 
@@ -43,25 +42,20 @@ added = 2 + 3
 #
 # You can then type in 'exit()' to leave Python.
 #
-# So we get 14! Python executes the multiplication first,
-# and then the addition. We can control this using brackets.
+# So we get 14! Python executes the multiplication first, and then the addition. We can control this using brackets.
 #
 # @TASK: Try this using `python` in the shell:
 
 (2 + 3) * 4
 
-# As you can see, we can use brackets to control the order
-# the expressions are evaluated.
+# As you can see, we can use brackets to control the order the expressions are evaluated.
 
 # That handy "`python` in the shell" thing is called the
-# Python REPL. REPL stands for Read, Evaluate, and Print
-# Loop. It reads the code you type in, evaluates the
-# expression, prints the result, and then does that forever
-# in a loop.
-#
-# You can use it to find out what different expressions
-# evaluate to, and generally play around with Python to see
-# what it does.
+# Python REPL. REPL stands for Read, Evaluate, and Print Loop.
+
+# It reads the code you type in, evaluates the expression, prints the result, and then does that forever in a loop.
+
+# You can use it to find out what different expressions evaluate to, and generally play around with Python to see what it does.
 
 # I'm going to reintroduce the `add_one` function:
 
@@ -75,10 +69,7 @@ add_one(3)          # Evaluates to 4
 add_one(4) * 3      # Evaluates to 15
 2 + add_one(4) * 3  # Evaluates to 17
 
-# What to take from this? Calling a function is also an
-# expression! Many things in Python are expressions, and we
-# can combine data, operators, and function calls into some
-# very advanced expressions.
+# What to take from this? Calling a function is also an expression! Many things in Python are expressions, and we can combine data, operators, and function calls into some very advanced expressions.
 
 # @TASK: Try those expressions yourself. Run:
 #
@@ -93,15 +84,34 @@ add_one(4) * 3      # Evaluates to 15
 
 add_one(add_one(add_one(add_one(add_one(add_one(1))))))
 
-# @TASK: What do you think that evaluates to? And why? Give
-# it a go and find out.
+# @TASK: What do you think that evaluates to? And why? 
+# Give it a go and find out.
+
+# I think that the expression evaluates to 7 as each expression "add_one" is being added together, concluding with the final number "1" within the brackets.
 
 # @TASK: Play around with building complex expressions in
 # the space below.
 
 # EXPRESSIONS PLAYGROUND BEGINS
 
+# First, I have started off by defining a function.
 
+def add_two(num):
+  return num + 2
+
+def add_three(num):
+  return num + 3
+
+def add_four(num):
+  return num + 4
+
+# Then after defining some functions, I have then printed out the complex expression that evaluate to the number 77, 777 and 7777 accordingly.
+
+print (add_one(add_two(add_three(add_four(67)))))
+
+print (add_one(add_four(add_two(add_three(767) * 2 / 2))))
+
+print (add_four(add_two(add_one(add_three(1554) - 77 * 2 + 6367))))
 
 # EXPRESSIONS PLAYGROUND ENDS
 

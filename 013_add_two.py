@@ -17,7 +17,12 @@ from lib.helpers import check_that_these_are_equal
 
 # YOUR FUNCTION GOES BELOW THIS LINE
 
+def add_two(num):
+  return num + 2
 
+print ("When I add two onto the following number > add_two(75), this returns:")
+add_two(75)
+print(add_two(75))
 
 # YOUR FUNCTION GOES ABOVE THIS LINE
 

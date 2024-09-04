@@ -5,7 +5,7 @@
 def add_one(num):
   return num + 1
 
-# Here is how it used:
+# Here is how it is used:
 
 add_one(6)
 
@@ -14,6 +14,9 @@ add_one(6)
 print("add_one(6) returns:")
 print(add_one(6))
 
+print("When I add one onto the following number > add_one(76), this returns:")
+print(add_one(76))
+      
 # @TASK: Run this code in the shell:
 #
 #   python 012_add_one.py
