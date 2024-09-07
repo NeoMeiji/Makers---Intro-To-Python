@@ -42,9 +42,9 @@ print(text)
 
 another_text = "\n".join(lines)
 # Uncomment this next line if you want to see it
-# print(another_text)
+print(another_text)
 
-# `join` is actually little smarter — it only adds the `\n`
+# `join` is actually a little smarter — it only adds the `\n`
 # character between lines, not at the end also.
 
 # @TASK: Complete this exercise
@@ -54,11 +54,28 @@ print("Function: add_up_numbers")
 
 # Add up all the numbers in the list
 def add_up_numbers(numbers):
-  pass
+  total = 0
+  for number in numbers:
+    total = total + number
+  return total
+
 
 check_that_these_are_equal(
   add_up_numbers([1, 2, 3, 4]), 10)
 check_that_these_are_equal(
   add_up_numbers([2, 3, 4, 5]), 14)
+
+# My own example below:
+
+def add_the_following_numbers(lucky_number):
+  numbers_in_list = 0
+  for parameters in lucky_number:
+    numbers_in_list = numbers_in_list + parameters
+  return numbers_in_list
+
+check_that_these_are_equal(
+  add_the_following_numbers([10, 20, 30, 17]), 77)
+check_that_these_are_equal(
+  add_the_following_numbers([8, 16, 6, 47]), 77)
 
 # When you're done, move on to 035_mapping.py

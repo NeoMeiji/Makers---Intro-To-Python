@@ -8,9 +8,9 @@ from lib.helpers import check_that_these_are_equal
 
 # For example:
 
-# * Getting the price of each in a list of products
-# * Making each in a list of words uppercase
-# * Finding the first letter of each in a list of words
+# * Getting the price of each item in a list of products
+# * Making each item in a list of words uppercase
+# * Finding the first letter of each item in a list of words
 
 # Here's an example:
 
@@ -35,11 +35,32 @@ print("Function: add_one_hundred_to_numbers")
 
 # Return a new list of each number with 100 added
 def add_one_hundred_to_numbers(numbers):
-  pass
+  added_numbers = []
+  for number in numbers:
+    added_numbers.append(number + 100)
+  return added_numbers
 
 check_that_these_are_equal(
   add_one_hundred_to_numbers([1, 2, 3, 4]), [101, 102, 103, 104])
 check_that_these_are_equal(
   add_one_hundred_to_numbers([2, 3, 4, 5]), [102, 103, 104, 105])
+
+# My own example below:
+
+def add_two_hundred_and_fifty_five_to_numbers(list_of_numbers):
+  numbers_added = []
+  for parameters in list_of_numbers:
+    numbers_added.append(parameters + 255)
+  return numbers_added
+
+check_that_these_are_equal(
+  add_two_hundred_and_fifty_five_to_numbers([1, 2, 3, 4]), [256, 257, 258, 259])
+check_that_these_are_equal(
+  add_two_hundred_and_fifty_five_to_numbers([2, 3, 4, 5]), [257, 258, 259, 260])
+
+# Accumulator Variable > "[]" = It's where we put our summary value + It starts off blank.
+
+# Cannot use just ANY accumulator variable such as "" as it does not work and returns the following error:
+# AttributeError: 'str' object has no attribute 'append'
 
 # When you're done, move on to 036_filtering.py

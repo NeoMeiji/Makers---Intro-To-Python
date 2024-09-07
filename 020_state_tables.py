@@ -60,4 +60,17 @@ print(f"b is {b}")
 # like if you selected some text in this file and started
 # typing — it would replace what was already there.
 
+# My own example below:
+
+alpha = 25
+beta = 50
+charlie = 75
+
+beta = alpha
+charlie = beta
+
+print(f"alpha is {alpha}")
+print(f"beta is {alpha}")
+print(f"charlie is {beta}")
+
 # Move onto 021_two_step.py to continue

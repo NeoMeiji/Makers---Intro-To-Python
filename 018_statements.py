@@ -49,4 +49,12 @@ print("---")
 # You'll see that the first `19` value is thrown away and
 # replaced with the second `20` value.
 
+# My own example below:
+
+dates_that_my_birthday_could_have_been = "1st January 1999"
+dates_that_my_birthday_could_have_been = "2nd January 1999"
+dates_that_my_birthday_could_have_been = "3rd January 1999"
+
+print(f"The actual date of my birthday is: {dates_that_my_birthday_could_have_been}")
+
 # When you're ready, move on to 019_state.py

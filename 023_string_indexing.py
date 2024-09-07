@@ -4,10 +4,9 @@ from lib.helpers import check_that_these_are_equal
 
 # In the earlier material, we focused on numbers.
 
-# Numbers are a very simple data type — they represent a
-# single value.
+# Numbers are a very simple data type — they represent a single value.
 
-# Strings are more complex. They're a basic form of what, in
+# Strings are more complex. They're a basic form of what, in 
 # programming, we call a 'data structure'.
 
 # This means they've got more than one thing in them, and
@@ -51,8 +50,7 @@ print("")
 print("Function: get_first_letter")
 
 def get_first_letter(the_str):
-  # Return the first letter of the string
-  pass
+  return the_str[0]
 
 check_that_these_are_equal(
   get_first_letter("The king granted them"),
@@ -70,8 +68,7 @@ print("")
 print("Function: get_last_letter")
 
 def get_last_letter(the_str):
-  # Return the last letter of the string
-  pass
+  return the_str[-1]
 
 check_that_these_are_equal(
   get_last_letter("The king granted them"),
@@ -89,8 +86,7 @@ print("")
 print("Function: get_nth_letter")
 
 def get_nth_letter(the_str, n):
-  # Return the letter of the string at the specified index
-  pass
+  return the_str[n]
 
 check_that_these_are_equal(
   get_nth_letter("The king granted them", 4),
@@ -108,9 +104,7 @@ print("")
 print("Function: get_letters_between_four_and_eight")
 
 def get_letters_between_four_and_eight(the_str):
-  # Return the section of the string between indexes four
-  # and eight
-  pass
+  return the_str[4:8]
 
 check_that_these_are_equal(
   get_letters_between_four_and_eight("The king granted them"),

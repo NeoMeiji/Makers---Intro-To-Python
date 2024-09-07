@@ -2,8 +2,8 @@
 
 # A string is a sequence of characters (letters).
 
-# You've already seen the string syntax dotted around. Here
-# it is:
+# You've already seen the string syntax dotted around. 
+# Here it is:
 
 my_name = "Kay"
 print(my_name)
@@ -16,16 +16,23 @@ my_name = "Kay"
 
 my_name = 'Kay'
 
-# In Python, there's no meaningful difference between the
-# two.
+# In Python, there's no meaningful difference between the two.
 
 # Try out creating a string with your name in it:
 
-your_name = ???
+your_name = "Barak"
 print(your_name)
 
 # @TASK: Check your work by running this file with:
 # python 022_strings.py
+
+# My own example below:
+
+this_is_my_name = "Barak Shahbaz Faridmuhammad"
+print(this_is_my_name)
+
+this_is_my_producer_name = 'Baz.Wav'
+print(this_is_my_producer_name)
 
 # As you may have worked out, the `print(string)` function
 # prints a string to the shell so you can see it.

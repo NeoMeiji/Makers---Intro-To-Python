@@ -25,8 +25,20 @@ my_friends = ["Victoria", "Mel", "Melanie", "Emma"]
 
 # @TASK Try making your own here:
 
-your_list = ...
-print(your_list)
+# My own example below:
+
+my_list = ["Agadir", "Stresa", "St. Tropez", "Gujaranwala", "Hanza Valley"]
+print(my_list)
+print("---")
+
+my_favourite_manga_artists = ["Takehiko Inoue", "Hirohiko Araki", "Yoshitaka Amano","Takeshi Obata"]
+print(my_favourite_manga_artists)
+print("---")
+
+# Can have a list (a sequence of items) with different data types e.g., 
+
+this_is_an_example_of_a_list_with_different_data_types = [24, "Kobe Bryant", 7, "Christiano Ronaldo", 1, 6, "Are lucky numbers to roll on a dice"]
+print(this_is_an_example_of_a_list_with_different_data_types)
 
 # @TASK and print it out by running:
 

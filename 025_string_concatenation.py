@@ -34,8 +34,8 @@ my_name = "Kay"
 print(f"Hello, {my_name}!")
 
 # Note the `f` before the first quote, and the use of `{`
-# and `}` to create space you can put a variable into. In
-# fact, you can put any expression in there:
+# and `}` to create space you can put a variable into. 
+# In fact, you can put any expression in there:
 
 print(f"Your name is {len(my_name)} characters long")
 
@@ -56,9 +56,7 @@ print("")
 print("Function: greet")
 
 def greet(name):
-	# Return the string "Hello, Kay!" where "Kay" is the
-	# name provided
-	pass
+    return f"Hello, {name}!"
 
 check_that_these_are_equal(
 	greet("Chuang-tzu"),
